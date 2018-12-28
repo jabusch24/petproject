@@ -4,4 +4,4 @@ python:
   - "3.6"
 
 install:
-  - pip install bs4
+  - pip install beautifulsoup4
