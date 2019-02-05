@@ -31,17 +31,19 @@ The userflow diagram is important for the user (and any other reviewer) to under
 
 # SonarQube Scanner
 
-SonarQube performs an anaysis of the pet project; the quality measures and issues instances where coding rules were broken. to see the results please link on the Badget:
+SonarQube is able to inspect the code for bugs, vulnerabilities and code smells. After my first sonarqube inspection, the code had 1 bug which I then took care of (it was left code after a return statement). SonarQube outputs a report on their cloud server (which could be found here with login data: https://sonarcloud.io/dashboard?id=jabusch24_petproject) that gives an overview of the results:
+![Metrics](img/sonarqube.png)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jabusch24_petproject&metric=alert_status)](https://sonarcloud.io/dashboard?id=jabusch24_petproject)
 
+# CodeClimate
 
-The pet project complexity was calculated based on the number of paths through the code. This calculation gave a value of 54, is a low number indicating the code is easy to read. No duplicated blocks, files or lines. Two issues where found for an unused local variable and the other one having two branches in the same if statment.
+The second tool used to check the code was code climate quality, which similarly runs through the software and creates metrics on maintainability rated the hangman game as C with 3 code smells, thus one more that sonarqube detected. CodeClimate did not like the size of some of my functions which i should consider refactoring. On the other side, sonarqube rated the projet's maintainability as "A", those both tools seem to have very different metric policies.
 
-Overal Maintainability rating was A! (Remediation cost / Development cost : less than 0.05), no bugs rating A!. In General my code pass the SonarQube scanner no bugs and no vulnerabilities found!.
-Code Climate
+However, all measures have been rated as minor, as such the project does not pose any relevant threats. The report could also be found on https://codeclimate.com/github/jabusch24/petproject.
 
-Maintainability
+# CI/CD Pipeline
 
-This code review tool analyze all relevant files in the current working directory in my repository. 20 files where evaluated, 7 Total issues, and a general technical debt rate B (5% to 10% ratio)
+For continuous integration and delivery I used travis CI (https://travis-ci.org/jabusch24/petproject).
 
-https://travis-ci.org/jabusch24/petproject
+![travis](https://travis-ci.org/jabusch24/petproject.svg?branch=master)
