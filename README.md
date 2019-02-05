@@ -44,6 +44,22 @@ However, all measures have been rated as minor, as such the project does not pos
 
 # CI/CD Pipeline
 
-For continuous integration and delivery I used travis CI (https://travis-ci.org/jabusch24/petproject).
+For continuous integration and delivery I used travis CI (https://travis-ci.org/jabusch24/petproject) which requires a travis.yml file for configuration of the integration pipeline.
 
 ![travis](https://travis-ci.org/jabusch24/petproject.svg?branch=master)
+
+# Clean Code
+
+In order to prove my trust to clean code I present 5 examples of clean code implemented in the petproject:
+
+- Consistency: All function names were written using the snake methodology, and in a consistently descriptive manner
+- Prefer Dedicated Value: No primitive datatypes have been used to name variables.
+- Positive Conditionals: The code only runs through positive conditionals where it's necessary
+- Catch specific exceptions: The mot likely error cases of the project (e.g. no internet connection) are handled by exceptions to ensure smoothly running code.
+- Easy to Remove: All functions can be easily replaced. Interfaces are clearly defined
+
+Unfortunately, while reviewing my code, I also detected that I did not comment the code well enough and I also did not structure the functions too well.
+
+# Functional Programming
+
+As i learned coding with python first, I am well used to the functional style. In fact the entire project is only based on functions and not so on classes or objects. Due to the user interaction with the user it was not possible to create side-effect free functions.

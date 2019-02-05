@@ -1,0 +1,11 @@
+graph {
+    graph [bgcolor="blue"]
+    john [color="red"]
+    paul [color="yellow"]
+    ringo [color="green"]
+    george [color="pink"]
+    john -- paul [color="white"]
+    paul -- ringo [color="white"]
+    ringo -- george [color="white"]
+    george -- john [color="white"]
+}
