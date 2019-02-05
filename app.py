@@ -69,8 +69,7 @@ def play_game(words, offline):
         if failed == 0:
             print("You won. Final word is: ", dash_word)
             return (True, words[index])
-        # exit the script
-            break
+
         # print
         print(dash_word)
         guess = input("guess a character:")

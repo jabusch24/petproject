@@ -1,0 +1,7 @@
+organization=jabusch24-github
+projectKey=jabusch24_petproject
+serverUrl=https://sonarcloud.io
+serverVersion=7.7.0.21686
+dashboardUrl=https://sonarcloud.io/dashboard?id=jabusch24_petproject
+ceTaskId=AWi_CPGLrgUWdm-Arh1K
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWi_CPGLrgUWdm-Arh1K
